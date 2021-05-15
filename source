@@ -1,0 +1,174 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local shindolife = Instance.new("TextButton")
+local bloxburg = Instance.new("TextButton")
+local jailbreak = Instance.new("TextButton")
+local counterblox = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local madcity = Instance.new("TextButton")
+local murdermystery = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(82, 82, 82)
+main.BorderColor3 = Color3.fromRGB(93, 93, 93)
+main.Position = UDim2.new(0.040778894, 0, 0.419786632, 0)
+main.Size = UDim2.new(0, 560, 0, 373)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Size = UDim2.new(0, 560, 0, 68)
+title.Font = Enum.Font.SourceSans
+title.Text = "Slvopz's Hub"
+title.TextColor3 = Color3.fromRGB(232, 232, 232)
+title.TextSize = 46.000
+
+shindolife.Name = "shindolife"
+shindolife.Parent = main
+shindolife.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+shindolife.BorderColor3 = Color3.fromRGB(72, 72, 72)
+shindolife.Position = UDim2.new(0.0285714287, 0, 0.222520113, 0)
+shindolife.Size = UDim2.new(0, 200, 0, 63)
+shindolife.Font = Enum.Font.SourceSansBold
+shindolife.Text = "Shindo Life "
+shindolife.TextColor3 = Color3.fromRGB(161, 161, 161)
+shindolife.TextSize = 35.000
+shindolife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("http://assasine.com/Scripts/Shinobi_Life_2_Autofarm.lua", true))()
+end)
+bloxburg.Name = "bloxburg"
+bloxburg.Parent = main
+bloxburg.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+bloxburg.BorderColor3 = Color3.fromRGB(72, 72, 72)
+bloxburg.Position = UDim2.new(0.407142848, 0, 0.222520113, 0)
+bloxburg.Size = UDim2.new(0, 200, 0, 63)
+bloxburg.Font = Enum.Font.SourceSansBold
+bloxburg.Text = "Bloxburg"
+bloxburg.TextColor3 = Color3.fromRGB(161, 161, 161)
+bloxburg.TextSize = 35.000
+bloxburg.TextWrapped = true
+bloxburg.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
+
+jailbreak.Name = "jailbreak"
+jailbreak.Parent = main
+jailbreak.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+jailbreak.BorderColor3 = Color3.fromRGB(72, 72, 72)
+jailbreak.Position = UDim2.new(0.0285714287, 0, 0.415549606, 0)
+jailbreak.Size = UDim2.new(0, 200, 0, 63)
+jailbreak.Font = Enum.Font.SourceSansBold
+jailbreak.Text = "Jailbreak AutoRob"
+jailbreak.TextColor3 = Color3.fromRGB(161, 161, 161)
+jailbreak.TextScaled = true
+jailbreak.TextSize = 35.000
+jailbreak.TextWrapped = true
+jailbreak.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://bloxhub.xyz/script/loader"))()
+end)
+
+counterblox.Name = "counterblox"
+counterblox.Parent = main
+counterblox.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+counterblox.BorderColor3 = Color3.fromRGB(72, 72, 72)
+counterblox.Position = UDim2.new(0.407142848, 0, 0.415549606, 0)
+counterblox.Size = UDim2.new(0, 200, 0, 63)
+counterblox.Font = Enum.Font.SourceSansBold
+counterblox.Text = "Counter Blox Script"
+counterblox.TextColor3 = Color3.fromRGB(161, 161, 161)
+counterblox.TextScaled = true
+counterblox.TextSize = 35.000
+counterblox.TextWrapped = true
+counterblox.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/venosu/Hex-Hub/main/hexhub.lua'))()
+end)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.805357218, 0, 0, 0)
+close.Size = UDim2.new(0, 109, 0, 68)
+close.Font = Enum.Font.SourceSansBold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(195, 195, 195)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+madcity.Name = "madcity"
+madcity.Parent = main
+madcity.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+madcity.BorderColor3 = Color3.fromRGB(72, 72, 72)
+madcity.Position = UDim2.new(0.0285714269, 0, 0.624664903, 0)
+madcity.Size = UDim2.new(0, 200, 0, 63)
+madcity.Font = Enum.Font.SourceSansBold
+madcity.Text = "Mad City Auto Farm"
+madcity.TextColor3 = Color3.fromRGB(161, 161, 161)
+madcity.TextScaled = true
+madcity.TextSize = 35.000
+madcity.TextWrapped = true
+madcity.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://jack1214060.xyz/jayhub",true))()
+end)
+
+murdermystery.Name = "murdermystery"
+murdermystery.Parent = main
+murdermystery.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+murdermystery.BorderColor3 = Color3.fromRGB(72, 72, 72)
+murdermystery.Position = UDim2.new(0.407142848, 0, 0.624664903, 0)
+murdermystery.Size = UDim2.new(0, 200, 0, 63)
+murdermystery.Font = Enum.Font.SourceSansBold
+murdermystery.Text = "Murder Mystery"
+murdermystery.TextColor3 = Color3.fromRGB(161, 161, 161)
+murdermystery.TextScaled = true
+murdermystery.TextSize = 35.000
+murdermystery.TextWrapped = true
+murdermystery.MouseButton1Down:connect(function()
+	loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(101, 101, 101)
+openmain.BorderColor3 = Color3.fromRGB(94, 94, 94)
+openmain.Position = UDim2.new(0.0121816164, 0, 0.291916162, 0)
+openmain.Size = UDim2.new(0, 121, 0, 59)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+open.BackgroundTransparency = 1.000
+open.Size = UDim2.new(0, 121, 0, 59)
+open.Font = Enum.Font.SourceSansBold
+open.Text = "Open"
+open.TextColor3 = Color3.fromRGB(205, 205, 205)
+open.TextSize = 37.000
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+	openmain.Visible = false
+	main.Visible = true
+end)
